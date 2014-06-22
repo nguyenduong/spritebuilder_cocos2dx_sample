@@ -2888,6 +2888,7 @@
 		B375104F1823AC7B00B3BA6A /* CCPhysicsWorldInfo_chipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhysicsWorldInfo_chipmunk.h; sourceTree = "<group>"; };
 		B3AF019E1842FBA400A98B85 /* b2MotorJoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2MotorJoint.cpp; sourceTree = "<group>"; };
 		B3AF019F1842FBA400A98B85 /* b2MotorJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2MotorJoint.h; sourceTree = "<group>"; };
+		C82E97651956EC650083F3C4 /* CCBPhysicsJoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBPhysicsJoints.h; sourceTree = "<group>"; };
 		C87B18A619080B1200FAB557 /* CCLayoutBoxLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCLayoutBoxLoader.cpp; sourceTree = "<group>"; };
 		C87B18A719080B1200FAB557 /* CCLayoutBoxLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLayoutBoxLoader.h; sourceTree = "<group>"; };
 		C87B18AA19080B4400FAB557 /* CCSliderLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSliderLoader.cpp; sourceTree = "<group>"; };
@@ -5102,6 +5103,7 @@
 		C897E3F11923B6A6001953B6 /* spritebuilder */ = {
 			isa = PBXGroup;
 			children = (
+				C82E97651956EC650083F3C4 /* CCBPhysicsJoints.h */,
 				C897E4751923C267001953B6 /* CCParticleSystemQuadLoader.cpp */,
 				C897E4761923C267001953B6 /* CCParticleSystemQuadLoader.h */,
 				C897E45A1923BFE9001953B6 /* CCBAnimationManager.cpp */,
