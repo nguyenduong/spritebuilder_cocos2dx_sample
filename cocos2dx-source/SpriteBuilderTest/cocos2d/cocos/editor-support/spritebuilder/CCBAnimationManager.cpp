@@ -339,7 +339,7 @@ ActionInterval* CCBAnimationManager::getAction(CCBKeyframe *pKeyframe0, CCBKeyfr
     } 
     else if (propName == "opacity")
     {
-        return FadeTo::create(duration, pKeyframe1->getValue().asByte());
+        return FadeTo::create(duration, pKeyframe1->getValue().asFloat() * 255); //DuongNT fixed
     }
     else if (propName == "color")
     {
@@ -499,7 +499,7 @@ void CCBAnimationManager::setAnimatedProperty(const std::string& propName, Node 
             }
             else if (propName == "opacity")
             {
-                unsigned char opacity = value.asByte();
+                unsigned char opacity = value.asFloat() * 255.0f;//value.asByte();
                 pNode->setOpacity(opacity);
             }
             else if (propName == "displayFrame")
@@ -512,7 +512,9 @@ void CCBAnimationManager::setAnimatedProperty(const std::string& propName, Node 
                 unsigned char r = c["r"].asByte();
                 unsigned char g = c["g"].asByte();
                 unsigned char b = c["b"].asByte();
+                //unsigned char a = c["a"].asByte();
                 pNode->setColor(Color3B(r, g, b));
+
             }
             else if (propName == "visible")
             {

@@ -40,11 +40,14 @@ public:
     }
     
     virtual void onNodeLoaded(cocos2d::Node * pNode, NodeLoader * pNodeLoader) {
+        /*
         this->mMySlider->setMaximumAllowedValue(100);
         this->mMySlider->setMinimumValue(0);
         //mBMFLabel->setString("This is BMF label");
+        */
         //Show Physic debug
-        //this->mPhysicNode->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+        this->mPhysicNode->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+        
     }
     
     virtual bool onAssignCCBMemberVariable(cocos2d::Ref* pTarget, const char* pMemberVariableName, cocos2d::Node* pNode) {
